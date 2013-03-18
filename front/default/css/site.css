@@ -1,0 +1,174 @@
+.login {margin:300px auto; width:400px;}
+.row {margin-left:0px;margin-top:4px;}
+.topBar {position:fixed;top:0px;height:40px;width:100%;background-color:#fff;z-index:999;}
+.topBar .content{margin:0 auto;width:960px;position:relative;height:40px;line-height:40px;border-bottom:1px solid #a0a0a0;}
+.topNav {width:700px; position:absolute; left:-24px;height:40px;}
+.topNav li{float:left;list-style-type:none;line-height:40px;height:40px;padding-right:10px;}
+.topNav li a{text-decoration:none;color:#2d2d2d;}
+.topNav li a:hover{color:#7d7d7d;}
+.topNav li.active a{text-decoration:none;color:#558BC4;}
+.session{position:absolute;right:0px;}
+.container {margin-top:50px;}
+
+.alert-white{background-color:#fff;color:#2d2d2d;border:1px solid #eee}
+
+.fixedRightCol{position:absolute;top:50px;right:0px;width:340px;}
+
+.hello p{font-size:18px; line-height:24px;}
+.hello .alert{font-size:18px; line-height:24px;}
+.hello .well{font-size:18px; line-height:24px;}
+.hello .btn{margin-top:10px;}
+
+.ace .user{font-size:24px;}
+.ace .user .average{font-size:24px;float:right;}
+.ace .user .average .small{font-size:12px;}
+
+.addTask {padding:3px 4px 2px 4px;}
+.addTask .category{font-size:16px;margin:0px;}
+.addTask .hours{width:50px;font-size:16px;margin:0px;}
+
+.leftCol{width:580px;float:left;margin-right:20px;}
+.leftCol .user{margin:14px 0px;}
+.rightCol{width:340px;float:left;}
+.weekRow{-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-bottom:1px solid #AAA;
+	padding:8px;border-left:1px solid #CCC;border-right:1px solid #CCC;border-top:1px solid #EEE;margin-top:7px;}
+.weekRow .weekOf{font-weight:bold;font-size:10px;text-align:center;}
+.weekRow .summary{height:33px;width:100%;position:relative;}
+.weekRow .totalHours{font-size:12px;line-height:12px;width:56px;display:inline-block;margin:10px 10px 0px 0px;text-align:right;float:right;}
+.weekRow .tangibleHours{font-size:12px;line-height:12px;width:56px;display:inline-block;margin:10px 10px 0px 0px;text-align:right;}
+.weekRow .progress{height:11px;position:absolute;top:10px;left:66px;width:400px;}
+.weekRow .options{margin-top:4px;}
+
+.progress .bar{height:11px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.progress .bar.low{background:#CD0200;}
+.progress .bar.med{background:#819E37;}
+.progress .bar.high{background:#3399F3;}
+.progress .bar.extreme{background:#772877;}
+.progress .bar{z-index:3;position:absolute;}
+.progress .bar.totBar{position:absolute;background:#ccc;z-index:2;}
+
+.taskRow {cursor:pointer;background-color:#fcfcfc;min-height:30px;line-height:30px;font-size:20px;margin-bottom:10px;}
+.taskRow:hover {background-color:#fff;}
+.taskRow .hours{font-size:19px;display:inline-block;margin:4px 0px 0px 6px;height:19px;line-height:19px;padding:3px 4px;border:1px solid #fcfcfc;}
+.taskRow .hours.formActive:hover{border:1px solid #ddd;}
+.taskRow .hoursInput{width:40px;margin:4px 0px 0px 6px;font-size:16px;}
+.taskRow .hrs{font-size:14px;}
+.taskRow .task{font-size:19px;}
+.taskRow .remove{font-size:11px;float:right;}
+.taskRow .intangible{font-size:11px;}
+
+.taskDetail{padding:0px 10px 10px 10px;}
+.taskDetail .description{width:523px;height:22px;line-height:22px;font-size:14px;margin:0px;}
+.taskDetail .descriptionText{width:523px;line-height:22px;font-size:14px;padding:4px 6px;min-height:22px;margin-bottom:9px;border:1px solid #fcfcfc;word-wrap:break-word;}
+.taskDetail .descriptionText.formActive:hover{border:1px solid #ddd;}
+.taskDetail textarea{resize:none;}
+
+.userRow {position:relative;margin:4px 0px;cursor:pointer;}
+.userRow.selected{background-color:#f9f9f9;}
+.userRow .summary{width:90px;position:absolute;right:50px;top:5px;}
+.userRow .progress{height:11px;}
+.userRow .name{font-size:14px;}
+.userRow.selected .name{font-weight:bold;}
+.userRow .hours{font-size:14px;width:56px;position:absolute;right:150px;text-align:right;}
+.userRow .hrs{font-size:10px;}
+.userRow .total{font-size:14px;width:56px;position:absolute;right:0px;text-align:right;}
+
+.setupNav {margin:0;padding:0;}
+.setupNav li{list-style-type:none;display:inline-block;}
+.setup .container{margin-top:10px;}
+.setup .setupRow{height:40px;}
+.setup input{width:100px;margin-bottom:0px;}
+.setup .email{width:160px;}
+.setup .password{width:122px;margin-bottom:0px;}
+.setup .passwordReset{width:140px;}
+.setup .category{width:200px;}
+
+.welcomeTeamRow .deleteBtn{float:right;}
+
+.notification{position:fixed;bottom:0px;right:20px;}
+.decision{position:fixed;bottom:0px;right:20px;}
+.decision .btnBox{padding-top:10px;}
+
+.alertModule{position:fixed;top:200px;right:0px;left:0px;}
+.alertModule .outer{margin:0 auto;width:360px;font-size:17px;font-weight:bold;line-height:23px;}
+.alertModule .btnBox{padding-top:13px;}
+.alertModule .btn{margin-right:8px;}
+.alertOverlay{background-color:#000;opacity:.8;}
+
+.dropdownBox{position:relative;}
+.dropdown{position:absolute;top:30px;left:0px;z-index:1000;padding:10px 13px;background-color:#fff;border:1px solid #666;width:400px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+.dropdown span{display:block;font-size:18px;line-height:24px;cursor:pointer;padding:3px 4px;}
+.dropdown span.selected{background-color:#3399F3;color:#fff;}
+
+.chat{}
+.chat .chatBox{overflow:hidden;}
+.chat .chatRow{margin-bottom:6px;}
+.chat .chatAdd{}
+.chat .chatAdd textarea{resize:none;width:296px;}
+.chat .date{font-size:10px;}
+.chat .btnClose{top:0px;right:0px;position:absolute;}
+
+.chatUserRow{height:26px;}
+.chatUserRow .online{display:inline-block;width:1px;height:1px;padding:3px;margin-right:10px;margin-bottom:3px;}
+.chatUserRow .user{display:inline-block;font-size:14px;line-height:20px;}
+
+.reports .graph{overflow:hidden;position:relative;}
+.reports select{margin-bottom:0px;width:120px;}
+.reports .controls{width:100px;float:left;position:relative;height:200px;}
+.reports .controls input{width:100px;}
+.reports .older,.reports .newer{float:right;}
+.reportWeek{width:80px;float:right;position:relative;height:200px;}
+.reportWeek .weekOf{width:80px;position:absolute;bottom:0px;text-align:center;font-weight:bold;font-size:11px;}
+.reportWeek .bars{width:60px;position:absolute;bottom:20px;margin:10px;}
+.reportBar {background-color:#819E37;width:50px;height:0px;margin:0px 5px;}
+.reportBar.selected {background-color:#3399F3;}
+.reportBar.active {background-color:#772877;}
+.reportWeek .total{text-align:center;font-weight:bold;color:#819E37;}
+.reportWeek .total.active{color:#772877;}
+.reportCategoryList{cursor:pointer;padding:4px 0px 4px 6px;font-size:16px;}
+.reportCategoryList.selected{background-color:#3399F3;color:#fff;}
+.reportCategoryList.active{background-color:#772877;color:#fff;}
+.reportCategoryList .category{overflow:hidden;width:120px;display:inline-block;}
+
+.reportCategoryHours{float:right;width:80px;float:right;position:relative;text-align:center;}
+
+.user .summary{height:33px;width:100%;position:relative;}
+.user .totalHours{font-size:12px;line-height:12px;width:56px;display:inline-block;margin:10px 10px 0px 0px;text-align:right;float:right;}
+.user .tangibleHours{font-size:12px;line-height:12px;width:56px;display:inline-block;margin:10px 10px 0px 0px;text-align:right;}
+.user .progress{height:11px;position:absolute;top:10px;left:66px;width:400px;}
+.user .rightCol{}
+.user .val{font-size:16px;display:inline-block;}
+.user label{display:inline-block;width:120px;font-size:16px;}
+.user .row{margin:0px;}
+
+.me{font-size:16px;line-height:22px;}
+.me .summary{height:33px;position:relative;}
+.me .totalHours{font-size:12px;line-height:12px;width:56px;display:inline-block;margin:10px 50px 0px 0px;text-align:right;float:right;}
+.me .tangibleHours{font-size:12px;line-height:12px;width:56px;display:inline-block;margin:10px 10px 0px 0px;text-align:right;}
+.me .progress{height:11px;position:absolute;top:10px;left:66px;width:400px;}
+.me .rightCol{}
+.me .val{font-size:16px;display:inline-block;}
+.me label{display:inline-block;width:120px;font-size:16px;}
+.me input{width:200px;}
+.me h4{font-weight:bold;}
+.me .section{margin-bottom:20px;}
+.me .dow{font-weight:bold;}
+.me .aceBtn{margin-top:10px;}
+.me .section{margin-bottom:20px;overflow:hidden;}
+.me .row{margin:0px;}
+
+.welcomeTeamNew{clear:both;font-size:18px;padding:20px 0px;}
+.welcomeTeamNew select{margin:0px;}
+
+.welcomeTeamRow{margin:10px 20px 10px 0px;padding:10px 20px;background-color:#eee;display:block;float:left;
+	width:400px;}
+.welcomeTeamRow h4{min-height:30px;font-size:20px;}
+.welcomeTeamRow ul{min-height:24px;border:1px dashed #ccc;margin:10px 0px 0px 0px;clear:both;}
+.welcomeTeamRow li{list-style-type:none;padding:4px;line-height:30px;font-size:18px;}
+.welcomeTeamRow .cue{color:#bbb;}
+
+.welcomeTeamMember{clear:both;}
+.welcomeTeamMember .teamBtn{float:right;}
+
+.clear{clear:both;}
+

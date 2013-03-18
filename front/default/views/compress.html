@@ -1,0 +1,348 @@
+<div data-v="ace" class="ace">
+	<div class="leftCol">
+		<div class="user" data-prop="name">
+			
+		</div>
+		<div data-place="addTask"></div>
+		<div data-place="weekRow"></div>
+	</div>
+	<div class="rightCol">
+		<h3>PIONEERS</h3>
+		<div data-place="userRow"></div>
+	</div>
+</div><div data-v="addTask" class="addTask row">
+	<input type="checkbox" data-prop="tangible"/> Tangible
+	<input data-prop="hours" class="input input-xlarge hours" placeholder="# hrs"/>
+	<span class="dropdownBox">
+		<input data-prop="category" class="category" placeholder="on category"/>
+		<div class="dropdown"></div>
+	</span>
+	
+	<span class="label label-important error"></span>
+</div><div data-v="taskDetail" class="taskDetail">
+	<div class="row">
+		<div class="descriptionForm">
+			<textarea data-prop="descriptionText" class="description" placeholder="description"></textarea>
+		</div>
+		<div class="descriptionText" data-prop="description"></div>
+	</div>
+</div><div data-v="taskRow" class="taskRow row">
+	<span class="hours"><span data-prop="hours"></span> <span class="hrs">hrs</span></span>
+	<input class="hoursInput" data-prop="hours"/>
+	<span class="task" data-prop="categoryName"></span>
+	<span class="intangible" data-prop="intangible"></span>
+	<span class="btn btn-small remove">X</span>
+	<div data-place="taskDetail"></div>
+</div><div data-v="userRow" class="userRow">
+	<span data-prop="name" class="name"></span>
+	<span class="hours"><span data-prop="tangible"></span> <span class="hrs">tan</span></span>
+	<div class="summary">
+		<div class="progress"><div class="bar tanBar" style="width:0%"></div><div class="bar totBar" style="width:0%"></div></div>
+	</div>
+	<span class="total"><span data-prop="total"></span> <span class="hrs">tot</span></span>
+</div><div data-v="weekRow" class="weekRow">
+	<div class="weekOf label">WEEK OF <span data-prop="weekOf"></span></div>
+	<div class="summary">
+		<div class="tangibleHours"><span data-prop="tangibleHours">0</span> tan</div>
+		<div class="progress"><div class="bar tanBar" style="width:0%"></div><div class="bar totBar" style="width:0%"></div></div>
+		<div class="totalHours"><span data-prop="totalHours">0</span> tot</div>
+	</div>
+	<div data-place="taskRow"></div>
+	<div class="options">
+		<div class="addTaskButton btn">+ Add Task</div>
+		<div data-place="addTask"></div>
+	</div>
+</div><!-- Decision pop -->
+<div data-v="alert" class="alertModule" style="z-index:2000;">
+	<div class="alert alert-white outer">
+		<!-- Messages -->
+		<div class="alertMessage">
+		</div>
+		<div class="btnBox">
+		</div>
+	</div>
+</div>
+<div data-v="chat" class="chat">
+	<div class="leftCol">
+		<h3>CHAT</h3>
+		<div data-place="chatRow"></div>
+		<div data-place="chatAdd"></div>
+	</div>
+	<div class="rightCol">
+	</div>
+</div><div data-v="chatAdd" class="chatAdd row">
+	<textarea data-prop="message" placeholder="chat here"></textarea>
+	<div class="error alert"></div>
+</div><div data-v="chatRightCol">
+	<h3>PIONEERS</h3>
+	<div data-place="chatUserRow"></div>
+</div><div data-v="chatRow" class="chatRow">
+	<a href="javascript:" data-prop="name"></a>
+	<span data-prop="message"></span>
+	<span class="date" data-prop="date"></span>
+</div><div data-v="chatUserRow" class="chatUserRow">
+	<span data-prop="online" class="online btn">&ensp;</span>
+	<a href="javascript:" data-prop="name" class="user"></a>
+</div><div data-v="hello" class="hello">
+	<div class="leftCol">
+		<h3>Welcome to <a href="http://www.onecommunityranch.org" 
+			target="_blank">One Community</a>'s ACE Application</h3>
+		<p>
+			We use this application mainly as a way to track our contribution to One Community.  It is also used for internal communication, organizing teams, and reporting progress.
+		</p>
+
+
+	</div>
+	<div class="rightCol">
+		<div class="alert alert-info">
+			This application is open source!  Get the source code here:
+			<br/>
+			<span class="btn githubBtn">OCACE GITHUB</span>
+		</div>
+		<div class="alert alert-success">
+			Play with the application in the sandbox: <br/>
+			<span class="btn sandboxBtn">OCACE SANDBOX</span>
+		</div>
+		<div class="well">
+			Pioneers enter here: <br/>
+			<span class="btn loginBtn">LOGIN</span>
+		</div>
+	</div>
+</div><div data-v="home" class="home">
+	<div data-place="topBar"></div>
+	<div class="container">
+	</div>
+</div><div data-v="login" class="login">
+	<h2>Login</h2>
+	<div class="row">
+		<input type="text" class="input-xlarge" name="username" placeholder="Username"/>
+	</div>
+	<div class="row">
+		<input type="password" class="input-xlarge" name="password" placeholder="Password"/>
+	</div>
+	<div class="row">
+		<span class="label label-info error"></span>
+	</div>
+</div><div data-v="me" class="me">
+	<div class="leftCol">
+		<div class="userTop">
+			<div class="section">
+				<h3>ACE HOURS</h3>
+				<div class="summary">
+					<span class="tangibleHours"><span data-prop="tangible"></span> <span class="hrs">tan</span></span>
+					<div class="progress"><div class="bar tanBar" style="width:0%"></div><div class="bar totBar" style="width:0%"></div></div>
+					<span class="totalHours"><span data-prop="total"></span> <span class="hrs">tot</span></span>
+				</div>
+				<span class="btn btn-success viewTasks aceBtn">View/Add ACE Tasks</span>
+			</div>
+			<div class="section">
+				<h3>WEEKLY CALLS</h3>
+				<div class="calls">
+					<span class="dow badge badge-info">Monday</span>
+					<div class="call">
+						Pioneer Team Call<br/>
+						6pm<br/>
+						712-432-3100<br/> 
+						Enter Code: 993669
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rightCol">
+		<h3>DETAILS</h3>
+		<div class="detailsDisp">
+			<div class="row">
+				<label>Username: </label><div data-prop="username" class="val"></div>
+			</div>
+			<div class="row">
+				<label>First Name: </label><div data-prop="fName" class="val"></div>
+			</div>
+			<div class="row">
+				<label>Last Name: </label><div data-prop="lName" class="val"></div>
+			</div>
+			<div class="row">
+				<label>Email: </label><div data-prop="email" class="val"></div>
+			</div>
+			<div class="row">
+				<label>Phone: </label><div data-prop="phoneDisp" class="val"></div>
+			</div>
+			
+			<div class="row">
+				<span class="btn btnEdit">Edit</span>
+			</div>
+		</div>
+		<div class="detailsEdit">
+			<div class="row">
+				<label>Username: </label><div data-prop="username" class="val"></div>
+			</div>
+			<div class="row">
+				<label>First Name: </label><input data-prop="fName" class="val"/>
+			</div>
+			<div class="row">
+				<label>Last Name: </label><input data-prop="lName" class="val"/>
+			</div>
+			<div class="row">
+				<label>Email: </label><input data-prop="email" class="val"/>
+			</div>
+			<div class="row">
+				<label>Phone: </label><input data-prop="phone" class="val"/>
+			</div>
+			<div class="row">
+				<span class="btn btnDone">Done</span>
+			</div>
+		</div>
+		<h3>PASSWORD</h3>
+		<div>
+			<div class="row">
+				<label>Password: </label><span class="btn btnChangePass">Change Password</span><input type="password" data-prop="password" class="changePassForm" class="val"/>
+			</div>
+
+		</div>
+	</div>
+</div><div data-v="reportBar" class="reportBar">
+</div><div data-v="reportCategoryHours" class="reportCategoryHours">
+	<span data-prop="hours">-</span>
+</div><div data-v="reportCategoryList" class="row reportCategoryList">
+	<span data-prop="category" class="category"></span>
+	<div data-place="reportCategoryHours"></div>
+</div><div data-v="reportWeek" class="reportWeek">
+	<div class="bars">
+		<div class="total"><span data-prop="total">0</span>h</div>
+		<div data-place="reportBar"></div>
+	</div>
+	<div data-prop="weekOf" class="weekOf"></div>
+</div><div data-v="reports" class="reports">
+	<div class="leftCol">
+		<h3>WEEKLY TOTALS <span class="btn newer">Newer >></span><span class="btn older"><< Older</span></h3>
+		<div class="graph well">
+			<div class="controls">
+				<!--select data-prop="period">
+				</select-->
+				
+			</div>
+			<div data-place="reportWeek"></div>
+			<div class="clear"></div>
+			<div data-place="reportCategoryList"></div>
+		</div>
+	</div>
+	<div class="rightCol">
+		<h3>EXPORT</h3>
+		<select class="weeks"></select>
+		<span class="btn export">Export CSV</span>
+	</div>
+</div><div data-v="session" class="session">
+	<a class="username" data-prop="username" href="#!home/me"></a>
+	<span class="btn btn-small logout">logout</span>
+</div>
+<div data-v="categories">
+	<div data-place="categoryRowNew"></div>
+	<div data-place="categoryRow"></div>
+</div><div data-v="categoryRow" class="categoryRow setupRow row">
+	<input type="text" data-prop="category" class="category" placeholder="Category"/>
+	<span class="btn remove">Remove</span>
+</div><div data-v="categoryRowNew" class="categoryRow setupRow row">
+	<input type="text" data-prop="category" class="category" placeholder="New category"/>
+</div><div data-v="pioneerRow" class="setupRow pioneerRow row">
+	<input type="text" data-prop="username" class="username" placeholder="Username"/>
+	<input type="text" data-prop="fName" class="fName" placeholder="First Name"/>
+	<input type="text" data-prop="lName" class="lName" placeholder="Last Name"/>
+	<input type="text" data-prop="phone" class="phone" placeholder="Phone"/>
+	<input type="text" data-prop="email" class="email" placeholder="Email"/>
+	<span class="resetPassword btn">Reset Password</span><input class="password" type="text" data-prop="password" placeholder="Password"/>
+	<span class="btn remove">Remove</span>
+</div><div data-v="pioneerRowNew" class="pioneerRow setupRow row">
+	<input type="text" data-prop="username" class="username" placeholder="Username"/>
+	<input type="text" data-prop="fName" class="fName" placeholder="First Name"/>
+	<input type="text" data-prop="lName" class="lName" placeholder="Last Name"/>
+	<input type="text" data-prop="phone" class="phone" placeholder="Phone"/>
+	<input type="text" data-prop="email" class="email" placeholder="Email"/>
+	<input class="password" type="text" data-prop="password" placeholder="Password"/>
+</div><div data-v="pioneers">
+	<div data-place="pioneerRowNew"></div>
+	<div data-place="pioneerRow"></div>
+</div><div data-v="setup" class="setup">
+	<h3>SETUP</h3>
+	<ul class="setupNav">
+		<li><a class="btn" href="#!home/setup/pioneers">PIONEERS</a></li>
+		<li><a class="btn" href="#!home/setup/categories">CATEGORIES</a></li>
+		<li><a class="btn" href="#!home/setup/welcomeTeams">WELCOME TEAMS</a></li>
+	</ul>
+	<div class="container">
+	</div>
+</div><li data-v="welcomeTeamMember" class="welcomeTeamMember">
+	<span data-prop="name"></span>
+</li><div data-v="welcomeTeamNew" class="welcomeTeamNew">
+	<select data-prop="users">
+	</select>
+	<span class="btn createBtn">Create Welcome Team</div>
+</div><div data-v="welcomeTeamRow" class="welcomeTeamRow row">
+	<h4>
+		<span class="btn btn-inverse team">1</span> <span class="name" data-prop="nameFac"></span>
+		<span class="btn deleteBtn">Remove</span>
+	</h4>
+	<ul class="usersList">
+	</ul>
+</div><div data-v="welcomeTeams" class="welcomeTeams">
+	<div data-place="welcomeTeamRow"></div>
+	<div class="welcomeTeamRow" data-welcome="none">
+		<h4>No Welcome Team</h4>
+		<ul class="welcomeTeamMembers">
+		</ul>
+	</div>
+	<div data-place="welcomeTeamNew"></div>
+</div><div data-v="topBar" class="topBar">
+	<div class="content">
+		<div data-place="topNav"></div>
+		<div data-place="session"></div>
+		<div class="fixedRightCol">
+			<div data-place="fixedRightCol"></div>
+		</div>
+	</div>
+</div><ul data-v="topNav" class="topNav">
+	<li><a href="#!home/me">ME</a></li>
+	<li><a href="#!home/ace">ACE</a></li>
+	<li><a href="#!home/reports">REPORTS</a></li>
+	<li><a href="#!home/chat">CHAT (<span data-prop="chatAlerts">0</span>)</a></li>
+	<li><a href="#!home/setup" class="setup">SETUP</a></li>
+	<li><a href="https://docs.google.com/spreadsheet/ccc?key=0Ag3XgAuDet9JdHBiMzJ2ODJkUlEyU0dTZlk5bF9lTVE#gid=0" target="_blank">PORTAL</a></li>
+	<!--
+	<li><a href="javascript://under construction">PROJECTS</a></li>
+	<li><a href="javascript://under construction">WELCOME</a></li>
+	<li><a href="javascript://under construction">OC TEAM</a></li>
+	-->
+</ul><div data-v="user" class="user">
+	<div class="leftCol">
+		<div class="userTop">
+			<h3 data-prop="name" class="name"></h3>
+			<strong>THIS WEEK'S HOURS</strong>
+			<div class="summary">
+				<span class="tangibleHours"><span data-prop="tangible"></span> <span class="hrs">tan</span></span>
+				<div class="progress"><div class="bar tanBar" style="width:0%"></div><div class="bar totBar" style="width:0%"></div></div>
+				<span class="totalHours"><span data-prop="total"></span> <span class="hrs">tot</span></span>
+			</div>
+			<span class="btn btn-success viewTasks">View ACE Tasks</span>
+			
+		</div>
+	</div>
+	<div class="rightCol">
+		<h3>DETAILS</h3>
+		<div class="detailsDisp">
+			<div class="row">
+				<label>Username: </label><div data-prop="username" class="val"></div>
+			</div>
+			<div class="row">
+				<label>First Name: </label><div data-prop="fName" class="val"></div>
+			</div>
+			<div class="row">
+				<label>Last Name: </label><div data-prop="lName" class="val"></div>
+			</div>
+			<div class="row">
+				<label>Email: </label><div data-prop="email" class="val"></div>
+			</div>
+			<div class="row">
+				<label>Phone: </label><div data-prop="phoneDisp" class="val"></div>
+			</div>
+		</div>
+	</div>
+</div>
